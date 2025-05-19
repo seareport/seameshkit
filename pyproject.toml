@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "seameshkit"
+version = "0.1.0"
+description = ""
+authors = ["tomsail <saillour.thomas@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+numpy = "*"
+pandas = "*"
+xarray = "*"
+meshio = "*"
+matplotlib = "*"
+
+[tool.poetry.group.dev.dependencies]
+xarray-selafin = "*"
+pytest = "*"
+gmsh = "*"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
