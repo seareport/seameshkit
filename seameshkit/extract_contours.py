@@ -1,3 +1,6 @@
+# scripts taken from opentelemac telemac-mascaret Repository:
+# https://gitlab.pam-retd.fr/otm/telemac-mascaret/-/blob/main/scripts/python3/pretel/extract_contour.py
+
 import xarray as xr
 from collections import defaultdict, OrderedDict
 
