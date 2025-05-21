@@ -29,6 +29,7 @@ def parse_hgrid(
     sep: str | None = None,
 ) -> dict[str, T.Any]:
     """
+    source: https://github.com/ec-jrc/pyPoseidon/blob/master/pyposeidon/utils/cfl.py
     Parse an hgrid.gr3 file.
 
     The function is also able to handle fort.14 files, too, (i.e. ADCIRC)
@@ -123,6 +124,7 @@ class SCHISM(MeshAdapter):
 
     @classmethod
     def write(cls, std_ds: xr.Dataset, path: T.Union[str, pathlib.Path]) -> None:
+        # source https://github.com/ec-jrc/pyPoseidon/blob/master/pyposeidon/mesh.py
         ds = format_specific_dataset(std_ds, "SCHISM")
         nn = ds.SCHISM_hgrid_node_x.size
         n3e = ds.nSCHISM_hgrid_face.size
